@@ -4,7 +4,7 @@ on:
     branches:
       - main
   schedule:
-    - cron: "0 5 * * *" # Nightly commit so the build picks up the latest GeoLite2 database
+    - cron: "0 3 * * 0" # Sunday 3 AM - rebuild to pick up the latest GeoLite2 database
   workflow_dispatch:
 
 env:
